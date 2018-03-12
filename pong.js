@@ -47,7 +47,7 @@ var keypress = {
 function preload() {
   paddlesound = loadSound('Bell.mp3');
   pointsound = loadSound('record.mp3');
-  gameoversound = loadSound('Gameover.mp3')
+  gameoversound = loadSound('Gameover.mp3');
 
 
 
@@ -130,14 +130,10 @@ function updateState() {
     // wait for spacebar
     if (keypress.spacebar == true) {
       GAMESTATE = 'PLAY';
-    }else if (GAMESTATE == 'RESTART') {
-    initializePositions();
-      score.player1=0;
-      score.player2=0;
-    if (keypress.spacebar == true) {
+    }else if (keypress.spacebar == true) {
       GAMESTATE = 'PLAY';
     }
-    }
+    
   } else if (GAMESTATE == 'POINT') {
     initializePositions();
     if (keypress.spacebar == true) {
@@ -200,7 +196,7 @@ function updateState() {
         pointsound.play();
       }
 
-      if (score.player1 > 5 || score.player2 > 5 ) {
+      if ((score.player1 >= 5 )|| (score.player2 >= 5) ) {
         GAMESTATE = 'GAMEOVER';
         //text('Game over',200,200)
         // textAlign(CENTER);
@@ -268,12 +264,12 @@ function drawStuff() {
   if (GAMESTATE == 'START') {
     // text press spacebar to play
     textAlign(CENTER);
-    text('press SPACEBAR to start', width / 2, height / 2);
+    text('Press SPACEBAR to Start', width / 2, height / 2);
     // text instruction
   } else if (GAMESTATE == 'PLAY') {} else if (GAMESTATE == 'POINT') {
     // play point sound
     textAlign(CENTER);
-    text('press SPACEBAR to continue', width / 2, height / 2);
+    text('Press SPACEBAR to Continue ', width / 2, height / 2);
   } else if (GAMESTATE == 'GAMEOVER')  {
     // play gamesound
     // text GAME OVER and WINNER!
@@ -316,5 +312,5 @@ function initializePositions() {
   ball.x = width / 2;
   // ball.y = random(40,340);
   ball.xvelocity = (random(-4, -2), random(2, 4)); // probably should randomize this somehow
-  ball.yvelocity = 4;
+  ball.yvelocity = (random(-4, -2), random(2, 4));
 }

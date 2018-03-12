@@ -1,0 +1,16 @@
+	1.	What is voltage?
+This potential energy, stored in the form of an electric charge imbalance and capable of provoking electrons to flow through a conductor, can be expressed as a term called voltage, which technically is a measure of potential energy per unit charge of electrons, or something a physicist would call specific potential energy. 
+Defined in the context of static electricity, voltage is the measure of work required to move a unit charge from one location to another, against the force which tries to keep electric charges balanced. In the context of electrical power sources, voltage is the amount of potential energy available (work to be done) per unit charge, to move electrons through a conductor.
+
+	2.	What is resistance?
+As the electrons work their way through the thin metal filament of the lamp, they encounter more opposition to motion than they typically would in a thick piece of wire. This opposition to electric current depends on the type of material, its cross-sectional area, and its temperature. It is technically known as resistance.
+	
+3.	Is a short circuit an example of a closed or open circuit?
+        Short circuit is specific condition of  closed circuit. A short circuit is an electrical circuit that allows a current to travel along an unintended path with no or a very low electrical impedance.
+	
+4.	How can you determine if a circuit is closed or open?
+       Open circuit has no electrical current.
+       Closed circuit has electrical current.
+	
+5.	Did you set up your computer to use the Feather?
+        No, I never used that before.
